@@ -8,11 +8,11 @@ const assertEqual = function(actual, expected) {
 };
 
 const tail = function(array) {
-  let tails = []
+  let tails = [];
   for (let i = 1; i < array.length; i++) {
     tails.push(array[i]);
   }
-  return tails
+  return tails;
 };
 
 const result = tail(["Hello", "Lighthouse", "Labs"]);
