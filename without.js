@@ -5,7 +5,7 @@ const without = function(source,itemsToRemove) {
     for (let j = 0; j < itemsToRemove.length; j++) {
       //console.log('source[i]:', source[i], 'itemsToRemove[j]', itemsToRemove[j], 'source[i] === itemsToRemove[j]?:', source[i] === itemsToRemove[j])
       if (source[i] === itemsToRemove[j]) {
-        //console.log('A:', source.splice(i, 1), 'I:', i)
+        //console.log('A:', source.splice(i, 1), 'I:', i) *This shit messed me up, the splice in the console.log() was mutating the source array.
         source.splice(i, 1)
         //i --;
       }
