@@ -1,5 +1,3 @@
-const assertEqual = require('./assertEqual')
-
 const tail = function(array) {
   let tails = [];
   for (let i = 1; i < array.length; i++) {
@@ -8,4 +6,4 @@ const tail = function(array) {
   return tails;
 };
 
-module.exports = tail
+module.exports = tail;

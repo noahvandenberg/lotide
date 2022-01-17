@@ -1,20 +1,4 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
-const eqArrays = function(testCaseOne, testCaseTwo) {
-  for (let i = 0; i < testCaseOne.length; i++) {
-    //console.log('type 1:',typeof testCaseOne[i], 'type 2:', typeof testCaseTwo[i]); // Type Checker
-    if (testCaseOne[i] !== testCaseTwo[i] || typeof testCaseOne[i] !== typeof testCaseTwo[i]) {
-      return false;
-    }
-  }
-  return true;
-};
+const eqArrays = require('./eqArrays');
 
 const eqObjects = function(object1, object2) {
   let matchedKeyValuePairs = 0;
@@ -35,5 +19,7 @@ const eqObjects = function(object1, object2) {
   }
 };
 
-assertEqual(eqObjects({ a: "1", b: "2" },{ a: "1", b: "2" }),true);
-assertEqual(eqObjects({ a: "1", b: [1,2] },{ a: "1", b: [1,2] }),true);
+module.exports = eqObjects;
+
+// assertEqual(eqObjects({ a: "1", b: "2" },{ a: "1", b: "2" }),true);
+// assertEqual(eqObjects({ a: "1", b: [1,2] },{ a: "1", b: [1,2] }),true);
