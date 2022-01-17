@@ -7,3 +7,5 @@ const tail = function(array) {
   }
   return tails;
 };
+
+module.exports = tail
