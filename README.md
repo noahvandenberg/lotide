@@ -43,3 +43,4 @@ The following functions are currently implemented:
 * `middle(array)`:  returns the value in the middle of the array.
 * `takeUntil(array,callback)`:  returns an array of values up until the value equates to true in the callback function.
 * `without(array, itemsToRemove)`: returns and array void of the values in the itemsToRemove array.
+* `titleCase(string)`: returns string with title case applied
